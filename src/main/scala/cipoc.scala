@@ -26,7 +26,7 @@ object cipoc {
 
     df.registerTempTable("csvload")
 
-    hiveContext.sql("insert into real_estate_trans select * from csvload")
+    hiveContext.sql("insert into cipoc.real_estate_trans select * from csvload")
 
   }
 
