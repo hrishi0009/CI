@@ -17,7 +17,7 @@ object cipoc {
   def main(args: Array[String]): Unit = {
 
 
-    val conf = new SparkConf().setAppName("DeltaAdd     "+table)
+    val conf = new SparkConf().setAppName("CIPOC test")
     val sc = new SparkContext(conf)
     val hiveContext = new org.apache.spark.sql.hive.HiveContext(sc)
 
